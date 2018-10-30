@@ -1,9 +1,7 @@
-import React, { Component } from "react";
+import React from 'react';
 
-class ChatArea extends Component {
-	render() {
-		return <div className="chatArea" />;
-	}
-}
+const ChatArea = () => (
+  <div className="chatArea" />
+);
 
 export default ChatArea;

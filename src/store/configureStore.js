@@ -21,7 +21,7 @@ const bindMiddleware = (middleware) => {
 const configureStore = () => {
   const store = createStore(
     rootReducer,
-    bindMiddleware([sagaMiddleware])
+    bindMiddleware([sagaMiddleware]),
   );
 
   store.runSagaTask = () => {

@@ -1,9 +1,7 @@
-import React, { Component } from "react";
+import React from 'react';
 
-class SendButton extends Component {
-	render() {
-		return <button>Send</button>;
-	}
-}
+const SendButton = () => (
+  <button type="button">Send</button>
+);
 
 export default SendButton;
