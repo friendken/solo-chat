@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import MessageBar from "./MessageBar";
 import ChatArea from "./ChatArea";
-import "./App.css";
+import "../stylesheets/App.css";
 
 class App extends Component {
     render() {
