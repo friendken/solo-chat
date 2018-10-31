@@ -26,12 +26,3 @@ body,
   flex-direction: row;
   margin: 10px;
 }
-
-.textInput {
-  flex-grow: 1;
-  margin-right: 20px;
-}
-
-.textInput input {
-  width: 100%;
-}

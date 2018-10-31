@@ -1,11 +1,11 @@
 import React from 'react';
 import TextInput from './TextInput';
-import SendButton from './SendButton';
+import Button from './Button';
 
 const MessageBar = () => (
   <div className="messageBar">
     <TextInput />
-    <SendButton />
+    <Button>Send</Button>
   </div>
 );
 

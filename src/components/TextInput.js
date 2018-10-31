@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MessageBar = () => (
+const TextInput = React.forwardRef((props, ref) => (
   <div className="textInput">
-    <input type="text" />
+    <input ref={ref} {...props} />
   </div>
-);
+));
 
-export default MessageBar;
+export default TextInput;
