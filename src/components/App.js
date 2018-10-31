@@ -1,7 +1,7 @@
 import React from 'react';
 import { string } from 'prop-types';
 import { connect } from 'react-redux';
-import ChatArea from './ChatArea';
+import ChatBox from './ChatBox';
 import UserIdentify from './UserIdentify';
 import '../stylesheets/App.css';
 
@@ -9,7 +9,7 @@ const AppComponent = ({ user }) => (
   <div className="app">
     {
       user
-        ? <ChatArea />
+        ? <ChatBox />
         : <UserIdentify />
     }
   </div>

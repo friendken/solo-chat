@@ -10,7 +10,7 @@ import '../stylesheets/UserIdentify.css';
 
 class UserIdentifyComponent extends Component {
   static propTypes = {
-    setUser: func.isRequired,
+    setUserAction: func.isRequired,
   }
 
   constructor(props) {
@@ -21,8 +21,8 @@ class UserIdentifyComponent extends Component {
   onHandleSubmit = (el) => {
     el.preventDefault();
     const value = get(this.user, 'current.value', '');
-    const { setUser } = this.props;
-    return setUser(value);
+    const { setUserAction } = this.props;
+    return setUserAction(value);
   }
 
   render() {
@@ -38,7 +38,7 @@ class UserIdentifyComponent extends Component {
 }
 
 const actions = pick(chatActions, [
-  'setUser',
+  'setUserAction',
 ]);
 
 const mapDispatchToProps = dispatch => bindActionCreators(actions, dispatch);

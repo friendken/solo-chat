@@ -35,18 +35,31 @@
   background: #c8c8c8
 }
 
+.chat_input .error-message {
+  margin: 0px 0px 8px 5px;
+  font-size: 11px;
+  color: red;
+}
+
+.chat_input .loading-message {
+  margin: 0px 0px 8px 5px;
+  font-size: 11px;
+  color: #349a9e;
+}
+
 .chat_text {
   width: calc(85% - 10px);
   padding: 10px;
   box-sizing: border-box;
   margin: 0 5px 5px;
   vertical-align: top;
-  font-family: 'Montserrat', sans-serif
+  font-family: 'Montserrat', sans-serif;
+  outline: 0;
 }
 
 .chat_submit {
   width: calc(15% - 5px);
-  padding: 10px;
+  padding: 11px;
   box-sizing: border-box;
   margin: 0 5px 5px 0;
   vertical-align: top;
@@ -54,7 +67,15 @@
   cursor: pointer;
   color: #349a9e;
   border-radius: 0 8px 8px 0;
-  transition: all .4s
+  transition: all .4s;
+  outline: 0
+}
+
+.chat_submit:disabled {
+  background-color: #8080809e;
+  border: 1px solid #8080809e;
+  color: black;
+  cursor: not-allowed;
 }
 
 .chat_submit:hover {
